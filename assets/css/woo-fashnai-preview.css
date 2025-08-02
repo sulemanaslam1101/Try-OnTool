@@ -1,0 +1,76 @@
+/**
+ * A WooCommerce plugin that allows users to virtually try on clothing and accessories.
+ *
+ * @package Try-On Tool
+ * @copyright 2025 DataDove LTD
+ * @license GPL-2.0-only
+ *
+ * This file is part of Try-On Tool.
+ * 
+ * Try-On Tool is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, version 2 only.
+ * 
+ * Try-On Tool is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ */
+/* Styles for TryOnTool Preview */
+.woo-fashnai-preview-test-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.woo-fashnai-preview-test-form .form-field {
+    margin-bottom: 15px;
+}
+
+.woo-fashnai-preview-test-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.woo-fashnai-preview-test-form input[type="file"],
+.woo-fashnai-preview-test-form input[type="url"],
+.woo-fashnai-preview-test-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.woo-fashnai-preview-test-form .form-submit {
+    margin-top: 20px;
+}
+
+#woo-fashnai-result,
+#woo-fashnai-error {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#woo-fashnai-result {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+#woo-fashnai-error {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.result-content pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+} 

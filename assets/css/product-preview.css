@@ -1,0 +1,219 @@
+/**
+ * A WooCommerce plugin that allows users to virtually try on clothing and accessories.
+ *
+ * @package Try-On Tool
+ * @copyright 2025 DataDove LTD
+ * @license GPL-2.0-only
+ *
+ * This file is part of Try-On Tool.
+ * 
+ * Try-On Tool is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, version 2 only.
+ * 
+ * Try-On Tool is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <https://www.gnu.org/licenses/>.
+ */
+/* Modal styles */
+.woo-fashnai-preview-modal {
+    display: none;
+    position: fixed;
+    z-index: 999999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.woo-fashnai-preview-modal .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    position: relative; 
+    max-height: 80% !important;
+    overflow-y: auto !important;
+    box-sizing: border-box !important;
+}
+
+.woo-fashnai-preview-modal .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.woo-fashnai-preview-modal .close:hover {
+    color: #000;
+}
+
+/* Form styles */
+.woo-fashnai-preview-modal .form-field {
+    margin-bottom: 20px;
+}
+
+.woo-fashnai-preview-modal label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.woo-fashnai-preview-modal input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.woo-fashnai-preview-modal .description {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Preview result styles */
+.woo-fashnai-preview-modal .preview-result {
+    margin-top: 20px;
+}
+
+.woo-fashnai-preview-modal .preview-image {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.woo-fashnai-preview-modal .preview-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.woo-fashnai-preview-modal .preview-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Error styles */
+.woo-fashnai-preview-modal .preview-error {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    color: #721c24;
+}
+
+/* Button styles */
+.woo-fashnai-preview-button {
+    margin-left: 10px !important;
+}
+
+.woo-fashnai-preview-modal .product-image-preview {
+    margin-bottom: 20px;
+    text-align: center;
+    min-height: 150px;
+    position: relative;
+}
+
+.woo-fashnai-preview-modal .product-image-preview img {
+    max-width: 200px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Empty image placeholder */
+.woo-fashnai-preview-modal .product-image-preview:empty::after {
+    content: "No image available";
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+    background-color: #f5f5f5;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    line-height: 150px;
+    color: #999;
+    font-style: italic;
+}
+
+.woo-fashnai-preview-modal .product-image-preview img.image-error {
+    border-color: #f5c6cb;
+    background-color: #f8d7da;
+}
+
+.woo-fashnai-preview-modal .product-image-preview .error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.woo-fashnai-preview-modal .product-image-preview h4 {
+    margin-bottom: 10px;
+}
+
+/* Loading indicator */
+.loading-indicator {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.loading-indicator p {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+.spinner {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(52, 152, 219, 0.2);
+    border-radius: 50%;
+    border-top-color: #3498db;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Styles for TryOnTool Preview */
+
+/* Uploaded images grid */
+.uploaded-images-grid{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  justify-content:center;
+}
+.uploaded-images-grid img{
+  width:100px;
+  height:auto;
+  border:1px solid #ddd;
+  border-radius:4px;
+  padding:4px;
+  cursor:pointer;
+  background:#fff;
+}
+.uploaded-images-grid img:hover{
+  border-color:#3498db;
+}

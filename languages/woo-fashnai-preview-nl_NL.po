@@ -1,0 +1,82 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Woo FashnAI Preview 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-04-27 12:00+0000\n"
+"PO-Revision-Date: \n"
+"Language: nl_NL\n"
+"X-Domain: woo-tryontool-preview\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.6\n"
+
+#. Plugin Name of the plugin
+#: tryontool.php
+msgid "Try On Tool Preview"
+msgstr ""
+
+#. Description of the plugin
+#: tryontool.php
+msgid "Connect WooCommerce with Try On Tool for AI-generated virtual try-on previews"
+msgstr ""
+
+#. Author of the plugin
+#: tryontool.php
+msgid "DataDove"
+msgstr ""
+
+#: includes/class-product-button.php:310
+msgid "Security check failed"
+msgstr ""
+
+#: includes/class-product-button.php:367
+msgid "Could not retrieve saved image. Please upload again."
+msgstr ""
+
+#: includes/class-product-button.php:382
+msgid "Please upload an image"
+msgstr ""
+
+#: includes/class-product-button.php:388
+msgid "Product image URL is missing"
+msgstr ""
+
+#: includes/class-product-button.php:393
+msgid "You are not allowed to use this feature."
+msgstr ""
+
+#: includes/class-product-button.php:414
+msgid "Daily quota exceeded, please try again tomorrow."
+msgstr ""
+
+#: includes/class-product-button.php:521
+msgid "Could not generate the try-on preview. The user or product image might not be suitable. Try a different photo."
+msgstr ""
+
+#: includes/class-product-button.php:523
+msgid "The request timed out. Please try again later."
+msgstr ""
+
+#: includes/class-product-button.php:547
+msgid "Preview generated successfully"
+msgstr ""
+
+#: includes/class-product-button.php:552
+msgid "AI preview generated, but the result could not be retrieved. Please try again."
+msgstr ""
+
+#: includes/class-product-button.php:559
+msgid "An unexpected error occurred: "
+msgstr ""
+
+#: includes/class-shortcode.php:134
+msgid "Failed to save uploaded file"
+msgstr ""
+
+#: includes/class-shortcode.php:157
+msgid "Successfully generated preview"
+msgstr ""

@@ -1,0 +1,16 @@
+Written Offer for Source Code (GPL-2.0, §3(b))
+
+This offer is valid to any third party and shall remain valid for three (3) years.
+
+For any binary version of Try-On Tool distributed by DataDove LTD, 
+we hereby offer to provide the complete corresponding source code upon request. 
+This source code will be provided on a durable medium or via secure digital download at no charge 
+other than the cost of distribution (if any).
+
+To obtain the source code, please send your request to:
+
+GPL Compliance Team  
+DataDove LTD  
+Email: gplqueries@tryontool.com
+
+Dated: 2025
