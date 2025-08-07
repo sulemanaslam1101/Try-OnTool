@@ -23,7 +23,7 @@
 /**
  * Plugin Name: Try-On Tool
  * Description: Connect WooCommerce with Try-On Tool for AI-generated virtual try-on previews
- * Version: 1.0
+ * Version: 1.1
  * Author: DataDove
  * Text Domain: woo-fashnai-preview
  * Domain Path: /languages
@@ -32,7 +32,7 @@
  * WC requires at least: 5.0
  * WC tested up to: 8.0
  */
-// Modified by DataDove LTD on 2025-08-01
+// Modified by DataDove LTD on 2025-08-07
 
 // If this file is called directly, abort.
 if (!defined('WPINC')) {
@@ -40,7 +40,7 @@ if (!defined('WPINC')) {
 }
 
 // Define plugin constants
-define('WOO_FASHNAI_PREVIEW_VERSION', '1.0');
+define('WOO_FASHNAI_PREVIEW_VERSION', '1.1');
 define('WOO_FASHNAI_PREVIEW_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('WOO_FASHNAI_PREVIEW_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('FASHNAI_RELAY_ENDPOINT', 'https://tryontool.com/wp-json/fashnai/v1/preview');

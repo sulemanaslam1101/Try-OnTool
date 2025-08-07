@@ -1,3 +1,4 @@
+<?php
 /**
  * A WooCommerce plugin that allows users to virtually try on clothing and accessories.
  *
@@ -19,6 +20,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
+?>
 <div class="wrap">
        <h1><?php echo esc_html(get_admin_page_title()); ?></h1>
        <form method="post" action="options.php">
@@ -86,7 +88,7 @@
                        <p style="margin-bottom: 10px;">
                            <?php _e('Need to purchase a plan?', 'woo-fashnai-preview'); ?>
                        </p>
-                       <a href="https://tryontool.com/plans-2" target="_blank" class="button button-primary" style="text-decoration: none;">
+                       <a href="https://tryontool.com/plans" target="_blank" class="button button-primary" style="text-decoration: none;">
                            <?php _e('Visit Try-On Tool Website', 'woo-fashnai-preview'); ?>
                        </a>
                        <p class="description">
